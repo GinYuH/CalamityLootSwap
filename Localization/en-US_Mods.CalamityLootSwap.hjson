@@ -1,0 +1,131 @@
+Items: {
+	YharonMan: {
+		Tooltip: Use this to switch between Yharon loot
+		DisplayName: Yharon Manipulator
+	}
+
+	WormMan: {
+		Tooltip: Use this to switch between Devourer of Gods loot
+		DisplayName: Devourer of Gods Manipulator
+	}
+
+	WitchMan: {
+		Tooltip: Use this to switch between Supreme Witch, Calamitas loot
+		DisplayName: Calamitas Manipulator
+	}
+
+	WeebMan: {
+		Tooltip: Use this to switch between Storm Weaver loot
+		DisplayName: Storm Weaver Manipulator
+	}
+
+	SlimeMan: {
+		Tooltip: Use this to switch between Slime God loot
+		DisplayName: Slime God Manipulator
+	}
+
+	ShellMan: {
+		Tooltip: Use this to switch between Giant Clam loot
+		DisplayName: Giant Clam Manipulator
+	}
+
+	RavagerMan: {
+		Tooltip: Use this to switch between Ravager loot
+		DisplayName: Ravager Manipulator
+	}
+
+	ProvMan: {
+		Tooltip: Use this to switch between Providence loot
+		DisplayName: Providence Manipulator
+	}
+
+	PlagueMan: {
+		Tooltip: Use this to switch between Plaguebringer Goliath loot
+		DisplayName: Plaguegbringer Goliath Manipulator
+	}
+
+	PerfMan: {
+		Tooltip: Use this to switch between Perforator loot
+		DisplayName: Perforator Manipulator
+	}
+
+	OreoMan: {
+		Tooltip: Use this to switch between Astrum Aureus loot
+		DisplayName: Astrum Aureus Manipulator
+	}
+
+	NutMan: {
+		Tooltip: Use this to switch between Signus loot
+		DisplayName: Signus Manipulator
+	}
+
+	HiveMan: {
+		Tooltip: Use this to switch between Hive Mind loot
+		DisplayName: Hive Mind Manipulator
+	}
+
+	GhostMan: {
+		Tooltip: Use this to switch between Polterghast loot
+		DisplayName: Polterghast Manipulator
+	}
+
+	FishMan: {
+		Tooltip: Use this to switch between Leviathan and Anahita loot
+		DisplayName: Leviathan and Anahita Manipulator
+	}
+
+	DraeMan: {
+		Tooltip: Use this to switch between Exo Mech loot
+		DisplayName: Draedon Manipulator
+	}
+
+	DeusMan: {
+		Tooltip: Use this to switch between Astrum Deus loot
+		DisplayName: Astrum Deus Manipulator
+	}
+
+	DesertMan: {
+		Tooltip: Use this to switch between Desert Scourge loot
+		DisplayName: Desert Scourge Manipulator
+	}
+
+	CryoMan: {
+		Tooltip: Use this to switch between Cryogen loot
+		DisplayName: Cryogen Manipulator
+	}
+
+	CrabMan: {
+		Tooltip: Use this to switch between Crabulon loot
+		DisplayName: Crabulon Manipulator
+	}
+
+	ClamMan: {
+		Tooltip: Use this to switch between Calamitas Clone loot
+		DisplayName: Calamitas Clone Manipulator
+	}
+
+	CeaselessMan: {
+		Tooltip: Use this to switch between Ceaseless Void loot
+		DisplayName: Ceaseless Void Manipulator
+	}
+
+	BrimMan: {
+		Tooltip: Use this to switch between Brimstone Elemental loot
+		DisplayName: Brimstone Elemental Manipulator
+	}
+
+	BoomerMan: {
+		Tooltip: Use this to switch between Old Duke loot
+		DisplayName: Old Duke Manipulator
+	}
+
+	BirbMan: {
+		Tooltip: Use this to switch between Dragonfolly loot
+		DisplayName: Dragonfolly Manipulator
+	}
+
+	AquaMan: {
+		Tooltip: Use this to switch between Aquatic Scourge loot
+		DisplayName: Aquatic Scourge Manipulator
+	}
+}
