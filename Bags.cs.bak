@@ -1,0 +1,154 @@
+using System;
+using System.Collections.Generic;
+using CalamityLootSwap;
+using CalamityLootSwap.Items;
+using Microsoft.Xna.Framework;
+using Terraria;
+using Terraria.DataStructures;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace CalamityLootSwap
+{
+    public class Bags : GlobalItem
+    {
+        public override bool InstancePerEntity => true;
+        public override bool CloneNewInstances => true;
+
+        public override void OpenVanillaBag(string context, Player player, int arg)
+        {
+            Mod calamityMod = ModLoader.GetMod("CalamityMod");
+
+            if (context == "bossBag")
+            {
+                if (calamityMod != null)
+                {
+                    //Here is a list of all Calamity Bags:
+                    //Aquatic Scourge = AquaticScourgeBag
+                    //Astrum Aureus = AstrageldonBag
+                    //Astrum Deus = AstrumDeusBag
+                    //Brimstone Elemental = BrimstoneWaifuBag
+                    //Dragonfolly = BumblebirbBag
+                    //Calamitas = CalamitasBag
+                    //Crabulon = CrabulonBag
+                    //Cryogen = CryogenBag
+                    //Desert Scourge = DesertScourgeBag
+                    //Devourer of Gods = DevourerofGodsBag
+                    //Hive Mind = HiveMindBag
+                    //Leviathan and Siren = LeviathanBag
+                    //Old Duke = OldDukeBag
+                    //Perforators = PerforatorBag
+                    //Plaguebringer Goliath = PlaguebringerGoliathBag
+                    //Polterghast = PolterghastBag
+                    //Providence = ProvidenceBag
+                    //Ravager = RavagerBag
+                    //Slime God = SlimeGodBag
+                    //Starter Bag = StarterBag
+                    //Yharon = YharonBag
+                    if (arg == calamityMod.ItemType("DesertScourgeBag"))
+                    {
+                                player.QuickSpawnItem(ModContent.ItemType<DesertMan>());
+                    }
+                    if (arg == calamityMod.ItemType("CrabulonBag"))
+                    {
+                                player.QuickSpawnItem(ModContent.ItemType<CrabMan>());
+                    }
+                    if (arg == calamityMod.ItemType("PerforatorBag"))
+                    {
+                                player.QuickSpawnItem(ModContent.ItemType<PerfMan>());
+                    }
+                    if (arg == calamityMod.ItemType("HiveMindBag"))
+                    {
+                                player.QuickSpawnItem(ModContent.ItemType<HiveMan>());
+                    }
+                    if (arg == calamityMod.ItemType("SlimeGodBag"))
+                    {
+                                player.QuickSpawnItem(ModContent.ItemType<SlimeMan>());
+                    }
+                    if (arg == calamityMod.ItemType("AquaticScourgeBag"))
+                    {
+                                player.QuickSpawnItem(ModContent.ItemType<AquaMan>());
+                    }
+                    if (arg == calamityMod.ItemType("BrimstoneWaifuBag"))
+                    {
+                                player.QuickSpawnItem(ModContent.ItemType<BrimMan>());
+                    }
+                    if (arg == calamityMod.ItemType("CalamitasBag"))
+                    {
+                                player.QuickSpawnItem(ModContent.ItemType<ClamMan>());
+                    }
+                    if (arg == calamityMod.ItemType("CryogenBag"))
+                    {
+                                player.QuickSpawnItem(ModContent.ItemType<CryoMan>());
+                    }
+                    if (arg == calamityMod.ItemType("LeviathanBag"))
+                    {
+                                player.QuickSpawnItem(ModContent.ItemType<FishMan>());
+                    }
+                    if (arg == calamityMod.ItemType("AstrageldonBag"))
+                    {
+                                player.QuickSpawnItem(ModContent.ItemType<OreoMan>());
+                    }
+                    if (arg == calamityMod.ItemType("PlaguebringerGoliathBag"))
+                    {
+                                player.QuickSpawnItem(ModContent.ItemType<PlagueMan>());
+                    }
+                    if (arg == calamityMod.ItemType("RavagerBag"))
+                    {
+                                player.QuickSpawnItem(ModContent.ItemType<RavagerMan>());
+                    }
+                    if (arg == calamityMod.ItemType("AstrumDeusBag"))
+                    {
+                                player.QuickSpawnItem(ModContent.ItemType<DeusMan>());
+                    }
+                    if (arg == calamityMod.ItemType("ProvidenceBag"))
+                    {
+                                player.QuickSpawnItem(ModContent.ItemType<ProvMan>());
+                    }
+                    if (arg == calamityMod.ItemType("BumblebirbBag"))
+                    {
+                                player.QuickSpawnItem(ModContent.ItemType<BirbMan>());
+                    }
+                    if (arg == calamityMod.ItemType("PolterghastBag"))
+                    {
+                                player.QuickSpawnItem(ModContent.ItemType<GhostMan>());
+                    }
+                    if (arg == calamityMod.ItemType("OldDukeBag"))
+                    {
+                                player.QuickSpawnItem(ModContent.ItemType<BoomerMan>());
+                    }
+                    if (arg == calamityMod.ItemType("DevourerofGodsBag"))
+                    {
+                                player.QuickSpawnItem(ModContent.ItemType<WormMan>());
+                    }
+                    if (arg == calamityMod.ItemType("YharonBag"))
+                    {
+                                player.QuickSpawnItem(ModContent.ItemType<YharonMan>());
+                    }
+                    if (arg == calamityMod.ItemType("SignusBag"))
+                    {
+                        player.QuickSpawnItem(ModContent.ItemType<NutMan>());
+                    }
+                    if (arg == calamityMod.ItemType("CeaselessVoidBag"))
+                    {
+                        player.QuickSpawnItem(ModContent.ItemType<CeaselessMan>());
+                    }
+                    if (arg == calamityMod.ItemType("StormWeaverBag"))
+                    {
+                        player.QuickSpawnItem(ModContent.ItemType<WeebMan>());
+                    }
+                    if (arg == calamityMod.ItemType("SCalBag"))
+                    {
+                        player.QuickSpawnItem(ModContent.ItemType<WitchMan>());
+                    }
+                    if (arg == calamityMod.ItemType("DraedonTreasureBag"))
+                    {
+                        player.QuickSpawnItem(ModContent.ItemType<DraeMan>());
+                    }
+                }
+            }
+        }
+    }
+}
+
+

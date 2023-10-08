@@ -1,0 +1,4 @@
+displayName = Calamity Loot Swap
+author = Potato Person and YuH
+version = 2.1
+modReferences = CalamityMod
