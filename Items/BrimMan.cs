@@ -6,6 +6,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using CalamityLootSwap;
+using CalamityMod.Items.Accessories;
 
 namespace CalamityLootSwap.Items 
 {
@@ -31,7 +32,7 @@ namespace CalamityLootSwap.Items
             {
 				{
                 Recipe recipe = CreateRecipe();
-				recipe.AddIngredient(ModLoader.GetMod("CalamityMod").Find<ModItem>("Gehenna").Type, 1);
+				recipe.AddIngredient(ModContent.ItemType<FlameLickedShell>(), 1);
 				recipe.AddIngredient(ModLoader.GetMod("CalamityMod").Find<ModItem>("BrimstoneSlag").Type, 10);
                 recipe.AddTile(TileID.Anvils);
                 recipe.Register();

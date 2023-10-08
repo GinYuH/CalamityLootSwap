@@ -5,12 +5,12 @@ Notes:
 [olist]
 [*] Manipulators have a 100% drop rate from most bosses
 [*] You can craft the Manipulators with the boss' ""expert"" drop
-[*] This mod will implode without Calamity on
 [*] Profaned Guardians and Eidolon Wyrm don't have items as they do not have any alternate drops with the same drop rate.
 [/olist]
 
 Changelog:
 [olist]
+[*] 2.2 Rewrote code
 [*] 2.1 1.4.4 port
 [*] 2.0.4 September tMod update, Signus and CV manips now use their accessories, Ares Exoskeleton support
 [*] 2.0.3 Fixed recipes being absolutely stupid
