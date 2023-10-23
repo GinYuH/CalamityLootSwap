@@ -7,145 +7,157 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using CalamityLootSwap;
 using CalamityLootSwap.Items;
+using CalamityMod.NPCs.DesertScourge;
+using CalamityMod;
+using CalamityMod.NPCs.Crabulon;
+using CalamityMod.NPCs.SunkenSea;
+using CalamityMod.NPCs.Perforator;
+using CalamityMod.NPCs.HiveMind;
+using CalamityMod.NPCs.SlimeGod;
+using CalamityMod.NPCs.Cryogen;
+using CalamityMod.NPCs.BrimstoneElemental;
+using CalamityMod.NPCs.AquaticScourge;
+using CalamityMod.NPCs.CalClone;
+using CalamityMod.NPCs.Leviathan;
+using Terraria.GameContent.ItemDropRules;
+using CalamityMod.Items.Accessories;
+using CalamityMod.NPCs.AstrumAureus;
+using CalamityMod.NPCs.PlaguebringerGoliath;
+using CalamityMod.NPCs.Ravager;
+using CalamityMod.NPCs.AstrumDeus;
+using CalamityMod.NPCs.Bumblebirb;
+using CalamityMod.NPCs.Providence;
+using CalamityMod.NPCs.StormWeaver;
+using CalamityMod.NPCs.Signus;
+using CalamityMod.NPCs.CeaselessVoid;
+using CalamityMod.NPCs.Polterghast;
+using CalamityMod.NPCs.OldDuke;
+using CalamityMod.NPCs.DevourerofGods;
+using CalamityMod.NPCs.Yharon;
+using CalamityMod.NPCs.SupremeCalamitas;
+using CalamityMod.NPCs.ExoMechs.Ares;
+using CalamityMod.NPCs.ExoMechs.Thanatos;
+using CalamityMod.NPCs.ExoMechs.Apollo;
 
 namespace CalamityLootSwap
 {
 	public class CalamityNpcDrops : GlobalNPC
 	{
-		public override void OnKill(NPC npc)
-		{
-			Mod mod = ModLoader.GetMod("CalamityMod");
-			if (mod == null)
+        public override void ModifyNPCLoot(NPC npc, NPCLoot npcLoot)
+        {
+            if (npc.type == ModContent.NPCType<DesertScourgeHead>())
 			{
-				return;
-			}
-			if (!Main.expertMode)
-			{
-				if (npc.type == mod.Find<ModNPC>("DesertScourgeHead").Type)
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<DesertMan>());
-				}
-				if (npc.type == mod.Find<ModNPC>("Crabulon").Type)
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<CrabMan>());
-				}
-				if (npc.type == mod.Find<ModNPC>("HiveMind").Type)
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<HiveMan>());
-				}
-				if (npc.type == mod.Find<ModNPC>("PerforatorHive").Type)
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<PerfMan>());
-				}
-				if (npc.type == ModLoader.GetMod("CalamityMod").Find<ModNPC>("SlimeGodCore").Type && !NPC.AnyNPCs(ModLoader.GetMod("CalamityMod").Find<ModNPC>("SplitEbonianSlimeGod").Type) && !NPC.AnyNPCs(ModLoader.GetMod("CalamityMod").Find<ModNPC>("SplitCrimulanSlimeGod").Type))
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<SlimeMan>());
-				}
-				if (npc.type == ModLoader.GetMod("CalamityMod").Find<ModNPC>("SplitEbonianSlimeGod").Type && !NPC.AnyNPCs(ModLoader.GetMod("CalamityMod").Find<ModNPC>("SlimeGodCore").Type) && !NPC.AnyNPCs(ModLoader.GetMod("CalamityMod").Find<ModNPC>("SplitCrimulanSlimeGod").Type) && NPC.CountNPCS(mod.Find<ModNPC>("SplitEbonianSlimeGod").Type) == 1)
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<SlimeMan>());
-				}
-				if (npc.type == ModLoader.GetMod("CalamityMod").Find<ModNPC>("SplitCrimulanSlimeGod").Type && NPC.CountNPCS(mod.Find<ModNPC>("SplitCrimulanSlimeGod").Type) == 1 && !NPC.AnyNPCs(ModLoader.GetMod("CalamityMod").Find<ModNPC>("SplitEbonianSlimeGod").Type) && !NPC.AnyNPCs(ModLoader.GetMod("CalamityMod").Find<ModNPC>("SlimeGodCore").Type))
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<SlimeMan>());
-				}
-				if (npc.type == mod.Find<ModNPC>("OldDuke").Type)
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<BoomerMan>());
-				}
-				if (npc.type == mod.Find<ModNPC>("Cryogen").Type)
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<CryoMan>());
-				}
-				if (npc.type == mod.Find<ModNPC>("AquaticScourgeHead").Type)
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<AquaMan>());
-				}
-				if (npc.type == mod.Find<ModNPC>("BrimstoneElemental").Type)
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<BrimMan>());
-				}
-				if (npc.type == mod.Find<ModNPC>("CalamitasClone").Type)
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<ClamMan>());
-				}
-				if (npc.type == mod.Find<ModNPC>("Leviathan").Type && !NPC.AnyNPCs(mod.Find<ModNPC>("Anahita").Type))
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<FishMan>());
-				}
-				if (npc.type == mod.Find<ModNPC>("Anahita").Type && !NPC.AnyNPCs(mod.Find<ModNPC>("Leviathan").Type))
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<FishMan>());
-				}
-				if (npc.type == mod.Find<ModNPC>("PlaguebringerGoliath").Type)
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<PlagueMan>());
-				}
-				if (npc.type == mod.Find<ModNPC>("RavagerBody").Type)
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<RavagerMan>());
-				}
-				if (npc.type == mod.Find<ModNPC>("Bumblefuck").Type)
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<BirbMan>());
-				}
-				if (npc.type == mod.Find<ModNPC>("Providence").Type)
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<ProvMan>());
-				}
-				if (npc.type == mod.Find<ModNPC>("Polterghast").Type)
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<GhostMan>());
-				}
-				if (npc.type == mod.Find<ModNPC>("StormWeaverHead").Type)
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<WeebMan>());
-				}
-				if (npc.type == mod.Find<ModNPC>("Signus").Type)
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<NutMan>());
-				}
-				if (npc.type == mod.Find<ModNPC>("CeaselessVoid").Type)
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<CeaselessMan>());
-				}
-				if (npc.type == mod.Find<ModNPC>("DevourerofGodsHead").Type)
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<WormMan>());
-				}
-				if (npc.type == mod.Find<ModNPC>("AstrumAureus").Type)
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<OreoMan>());
-				}
-				if (npc.type == mod.Find<ModNPC>("Yharon").Type)
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<YharonMan>());
-				}
-				if (npc.type == mod.Find<ModNPC>("GiantClam").Type && Main.hardMode)
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<ShellMan>());
-				}
-				if (npc.type == mod.Find<ModNPC>("AstrumDeusHead").Type && NPC.CountNPCS(mod.Find<ModNPC>("AstrumDeusHead").Type) == 1)
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<DeusMan>());
-				}
-				if (npc.type == ModLoader.GetMod("CalamityMod").Find<ModNPC>("SupremeCalamitas").Type)
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<WitchMan>());
-				}
-				if (npc.type == ModLoader.GetMod("CalamityMod").Find<ModNPC>("Apollo").Type && !NPC.AnyNPCs(ModLoader.GetMod("CalamityMod").Find<ModNPC>("AresBody").Type) && !NPC.AnyNPCs(ModLoader.GetMod("CalamityMod").Find<ModNPC>("ThanatosHead").Type))
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<DraeMan>());
-				}
-				if (npc.type == ModLoader.GetMod("CalamityMod").Find<ModNPC>("AresBody").Type && !NPC.AnyNPCs(ModLoader.GetMod("CalamityMod").Find<ModNPC>("Apollo").Type) && !NPC.AnyNPCs(ModLoader.GetMod("CalamityMod").Find<ModNPC>("ThanatosHead").Type))
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<DraeMan>());
-				}
-				if (npc.type == ModLoader.GetMod("CalamityMod").Find<ModNPC>("ThanatosHead").Type && !NPC.AnyNPCs(ModLoader.GetMod("CalamityMod").Find<ModNPC>("AresBody").Type) && !NPC.AnyNPCs(ModLoader.GetMod("CalamityMod").Find<ModNPC>("Apollo").Type))
-				{
-					Item.NewItem(npc.GetSource_Loot(), npc.getRect(), ModContent.ItemType<DraeMan>());
-				}
-			}
-		}
+				npcLoot.AddNormalOnly(ModContent.ItemType<DesertMan>());
+            }
+            if (npc.type == ModContent.NPCType<Crabulon>())
+            {
+                npcLoot.AddNormalOnly(ModContent.ItemType<CrabMan>());
+            }
+            if (npc.type == ModContent.NPCType<GiantClam>())
+            {
+                npcLoot.AddIf(()=> Main.hardMode && !Main.expertMode, ModContent.ItemType<ShellMan>());
+            }
+            if (npc.type == ModContent.NPCType<PerforatorHive>())
+            {
+                npcLoot.AddNormalOnly(ModContent.ItemType<PerfMan>());
+            }
+            if (npc.type == ModContent.NPCType<HiveMind>())
+            {
+                npcLoot.AddNormalOnly(ModContent.ItemType<HiveMan>());
+            }
+            if (npc.type == ModContent.NPCType<SlimeGodCore>())
+            {
+                npcLoot.AddNormalOnly(ModContent.ItemType<SlimeMan>());
+            }
+            if (npc.type == ModContent.NPCType<Cryogen>())
+            {
+                npcLoot.AddNormalOnly(ModContent.ItemType<CryoMan>());
+            }
+            if (npc.type == ModContent.NPCType<BrimstoneElemental>())
+            {
+                npcLoot.AddNormalOnly(ModContent.ItemType<BrimMan>());
+            }
+            if (npc.type == ModContent.NPCType<AquaticScourgeHead>())
+            {
+                npcLoot.AddNormalOnly(ModContent.ItemType<AquaMan>());
+            }
+            if (npc.type == ModContent.NPCType<CalamitasClone>())
+            {
+                npcLoot.AddNormalOnly(ModContent.ItemType<ClamMan>());
+            }
+            if (npc.type == ModContent.NPCType<Leviathan>() || npc.type == ModContent.NPCType<Anahita>())
+            {
+                LeadingConditionRule mainRule = npcLoot.DefineConditionalDropSet(Leviathan.LastAnLStanding);
+                LeadingConditionRule leadingConditionRule = new LeadingConditionRule(new Conditions.NotExpert());
+                mainRule.Add(leadingConditionRule);
+                leadingConditionRule.Add(ModContent.ItemType<FishMan>());
+            }
+            if (npc.type == ModContent.NPCType<AstrumAureus>())
+            {
+                npcLoot.AddNormalOnly(ModContent.ItemType<OreoMan>());
+            }
+            if (npc.type == ModContent.NPCType<PlaguebringerGoliath>())
+            {
+                npcLoot.AddNormalOnly(ModContent.ItemType<PlagueMan>());
+            }
+            if (npc.type == ModContent.NPCType<RavagerBody>())
+            {
+                npcLoot.AddNormalOnly(ModContent.ItemType<RavagerMan>());
+            }
+            if (npc.type == ModContent.NPCType<AstrumDeusHead>())
+            {
+                LeadingConditionRule mainRule = npcLoot.DefineConditionalDropSet((DropAttemptInfo info) => !AstrumDeusHead.ShouldNotDropThings(info.npc));
+                LeadingConditionRule leadingConditionRule = new LeadingConditionRule(new Conditions.NotExpert());
+                mainRule.Add(leadingConditionRule);
+                leadingConditionRule.Add(ModContent.ItemType<DeusMan>());
+            }
+            if (npc.type == ModContent.NPCType<Bumblefuck>())
+            {
+                npcLoot.AddNormalOnly(ModContent.ItemType<BirbMan>());
+            }
+            if (npc.type == ModContent.NPCType<Providence>())
+            {
+                npcLoot.AddNormalOnly(ModContent.ItemType<ProvMan>());
+            }
+            if (npc.type == ModContent.NPCType<StormWeaverHead>())
+            {
+                npcLoot.AddNormalOnly(ModContent.ItemType<WeebMan>());
+            }
+            if (npc.type == ModContent.NPCType<Signus>())
+            {
+                npcLoot.AddNormalOnly(ModContent.ItemType<NutMan>());
+            }
+            if (npc.type == ModContent.NPCType<CeaselessVoid>())
+            {
+                npcLoot.AddNormalOnly(ModContent.ItemType<CeaselessMan>());
+            }
+            if (npc.type == ModContent.NPCType<Polterghast>())
+            {
+                npcLoot.AddNormalOnly(ModContent.ItemType<GhostMan>());
+            }
+            if (npc.type == ModContent.NPCType<OldDuke>())
+            {
+                npcLoot.AddNormalOnly(ModContent.ItemType<BoomerMan>());
+            }
+            if (npc.type == ModContent.NPCType<DevourerofGodsHead>())
+            {
+                npcLoot.AddNormalOnly(ModContent.ItemType<WormMan>());
+            }
+            if (npc.type == ModContent.NPCType<Yharon>())
+            {
+                npcLoot.AddNormalOnly(ModContent.ItemType<YharonMan>());
+            }
+            if (npc.type == ModContent.NPCType<SupremeCalamitas>())
+            {
+                npcLoot.AddNormalOnly(ModContent.ItemType<WitchMan>());
+            }
+            if (npc.type == ModContent.NPCType<AresBody>() || npc.type == ModContent.NPCType<ThanatosHead>() || npc.type == ModContent.NPCType<Apollo>())
+            {
+                LeadingConditionRule mainRule = npcLoot.DefineConditionalDropSet(AresBody.CanDropLoot);
+                LeadingConditionRule leadingConditionRule = new LeadingConditionRule(new Conditions.NotExpert());
+                mainRule.Add(leadingConditionRule);
+                leadingConditionRule.Add(ModContent.ItemType<DraeMan>());
+            }
+        }
 	}
 }

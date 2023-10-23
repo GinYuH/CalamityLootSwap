@@ -10,6 +10,7 @@ Notes:
 
 Changelog:
 [olist]
+[*] 2.3 Fixed drop rates and rarities
 [*] 2.2 Rewrote code
 [*] 2.1 1.4.4 port
 [*] 2.0.4 September tMod update, Signus and CV manips now use their accessories, Ares Exoskeleton support

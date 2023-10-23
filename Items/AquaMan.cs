@@ -23,7 +23,7 @@ namespace CalamityLootSwap.Items
 			Item.height = 24;
 			Item.maxStack = 999;
 			Item.value = 5000;
-			Item.rare = 4;
+			Item.rare = ItemRarityID.Pink;
 		}
 		public override void AddRecipes()
 		{

@@ -6,6 +6,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using CalamityLootSwap;
+using CalamityMod.Items.Accessories;
 
 namespace CalamityLootSwap.Items 
 {
@@ -23,26 +24,7 @@ namespace CalamityLootSwap.Items
 			Item.height = 24;
 			Item.maxStack = 999;
 			Item.value = 5000;
-			Item.rare = 11;
-		}
-		public override void ModifyTooltips(List<TooltipLine> tooltips)
-		{
-			//rarity 12 (Turquoise) = new Color(0, 255, 200)
-			//rarity 13 (Pure Green) = new Color(0, 255, 0)
-			//rarity 14 (Dark Blue) = new Color(43, 96, 222)
-			//rarity 15 (Violet) = new Color(108, 45, 199)
-			//rarity 16 (Hot Pink/Developer) = new Color(255, 0, 255)
-			//rarity rainbow (no expert tag on item) = new Color(Main.DiscoR, Main.DiscoG, Main.DiscoB)
-			//rarity rare variant = new Color(255, 140, 0)
-			//rarity dedicated(patron items) = new Color(139, 0, 0)
-			//look at https://calamitymod.gamepedia.com/Rarity to know where to use the colors
-			foreach (TooltipLine tooltipLine in tooltips)
-			{
-				if (tooltipLine.Mod == "Terraria" && tooltipLine.Name == "ItemName")
-				{
-					tooltipLine.OverrideColor = new Color(0, 255, 0); //change the color accordingly to above
-				}
-			}
+			Item.rare = ModContent.RarityType<CalamityMod.Rarities.PureGreen>();
 		}
 		public override void AddRecipes()
 		{
@@ -51,7 +33,7 @@ namespace CalamityLootSwap.Items
 				{
                 Recipe recipe = CreateRecipe();
                 recipe.AddIngredient(ModLoader.GetMod("CalamityMod").Find<ModItem>("CorrodedFossil").Type, 5);
-				recipe.AddIngredient(ModLoader.GetMod("CalamityMod").Find<ModItem>("MutatedTruffle").Type, 1);
+				recipe.AddIngredient(ModContent.ItemType<OldDukeScales>(), 1);
                 recipe.AddTile(TileID.LunarCraftingStation);
                 recipe.Register();
 				}

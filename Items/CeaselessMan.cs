@@ -23,7 +23,8 @@ namespace CalamityLootSwap.Items
 			Item.height = 24;
 			Item.maxStack = 999;
 			Item.value = 5000;
-			Item.rare = 11;
+			Item.rare =
+            Item.rare = ModContent.RarityType<CalamityMod.Rarities.Turquoise>(); ;
 		}
 		public override void ModifyTooltips(List<TooltipLine> tooltips)
 		{
