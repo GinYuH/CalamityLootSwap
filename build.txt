@@ -1,4 +1,4 @@
 displayName = Calamity Loot Swap
 author = YuH
-version = 2.3
+version = 2.3.2
 modReferences = CalamityMod

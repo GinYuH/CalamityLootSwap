@@ -13,8 +13,8 @@ namespace CalamityLootSwap.Items
 	{
 		public override void SetStaticDefaults()
 			{
-				// DisplayName.SetDefault("Aquatic Scourge Manipulator");
-				// Tooltip.SetDefault("Use this to switch between Aquatic Scourge loot");
+			// DisplayName.SetDefault("Aquatic Scourge Manipulator");
+			// Tooltip.SetDefault("Use this to switch between Aquatic Scourge loot");
 			}
 		
 		public override void SetDefaults()

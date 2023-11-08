@@ -134,6 +134,8 @@ namespace CalValEX
             ItemType<LeviathanTeeth>(),
             ItemType<AnahitasArpeggio>(),
             ItemType<PearlofEnthrallment>(),
+            ItemType<GastricBelcherStaff>(),
+            ItemType<Greentide>(),
         };
 
         List<int> polterItems = new List<int>
@@ -299,9 +301,9 @@ namespace CalValEX
             ManipulatorRecipes(ItemType<HiveMan>(), TileID.DemonAltar, hiveItems);
             ManipulatorRecipes(ItemType<NutMan>(), TileID.LunarCraftingStation, sigItems);
             ManipulatorRecipes(ItemType<OreoMan>(), TileID.MythrilAnvil, oreoItems);
-            ManipulatorRecipes(ItemType<PlagueMan>(), TileID.Mythril, pbgItems);
+            ManipulatorRecipes(ItemType<PlagueMan>(), TileID.MythrilAnvil, pbgItems);
             ManipulatorRecipes(ItemType<ProvMan>(), TileID.LunarCraftingStation, proviItems);
-            ManipulatorRecipes(ItemType<RavagerMan>(), TileID.Mythril, ravagerItems);
+            ManipulatorRecipes(ItemType<RavagerMan>(), TileID.MythrilAnvil, ravagerItems);
             ManipulatorRecipes(ItemType<ShellMan>(), TileID.Anvils, clamItems);
             ManipulatorRecipes(ItemType<SlimeMan>(), TileType<StaticRefiner>(), slimeItems);
             ManipulatorRecipes(ItemType<WeebMan>(), TileID.LunarCraftingStation, weavieItems);

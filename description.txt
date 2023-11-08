@@ -6,6 +6,8 @@ Notes:
 - Profaned Guardians and Eidolon Wyrm don't have items as they do not have any alternate drops with the same drop rate.
 
 Changelog:
+2.3.2 Fixed Gastric Belcher Staff and Greentide not being registered for Leviathan's manipulator
+2.3.1 Fixed PBG and Ravager items being crafted at... Mythril ORE instead of the Mythril Anvil
 2.3 Fixed drop rates and rarities
 2.2 Rewrote code
 2.1 1.4.4 port
