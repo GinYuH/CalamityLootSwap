@@ -52,7 +52,7 @@ namespace CalValEX
             ItemType<VitriolicViper>(),
             ItemType<CadaverousCarrion>(),
             ItemType<ToxicantTwister>(),
-            ItemType<OldDukeScales>(),
+            ItemType<MutatedTruffle>(),
             ItemType<FetidEmesis>(),
         };
 
@@ -98,9 +98,9 @@ namespace CalValEX
 
         List<int> desertItems = new List<int>
         {
-            ItemType<SeaboundStaff>(),
-            ItemType<AquaticDischarge>(),
-            ItemType<StormSpray>(),
+            ItemType<BrittleStarStaff>(),
+            ItemType<SaharaSlicers>(),
+            ItemType<SandstreamScepter>(),
             ItemType<Barinade>(),
             ItemType<ScourgeoftheDesert>()
         };

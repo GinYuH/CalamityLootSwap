@@ -10,6 +10,7 @@ Notes:
 
 Changelog:
 [olist]
+[*] 2.3.3 Fixed bugs with latest Calamtiy update, Mutated Truffle is now swappable but Old Duke Scales aren't
 [*] 2.3.2 Fixed Gastric Belcher Staff and Greentide not being registered for Leviathan's manipulator
 [*] 2.3.1 Fixed PBG and Ravager items being crafted at... Mythril ORE instead of the Mythril Anvil
 [*] 2.3 Fixed drop rates and rarities
