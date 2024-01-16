@@ -1,0 +1,131 @@
+Items: {
+	YharonMan: {
+		Tooltip: 用于在犽戎的战利品之间转化
+		DisplayName: 犽戎兑换球
+	}
+
+	WormMan: {
+		Tooltip: 用于在神明吞噬者的战利品之间转化
+		DisplayName: 神明吞噬者兑换球
+	}
+
+	WitchMan: {
+		Tooltip: 用于在至尊女巫，灾厄的战利品之间转化
+		DisplayName: 灾厄兑换球
+	}
+
+	WeebMan: {
+		Tooltip: 用于在风暴编织者的战利品之间转化
+		DisplayName: 风暴编织者兑换球
+	}
+
+	SlimeMan: {
+		Tooltip: 用于在史莱姆之神的战利品之间转化
+		DisplayName: 史莱姆之神兑换球
+	}
+
+	ShellMan: {
+		Tooltip: 用于在巨像蛤的战利品之间转化
+		DisplayName: 巨像蛤兑换球
+	}
+
+	RavagerMan: {
+		Tooltip: 用于在毁灭魔像的战利品之间转化
+		DisplayName: 毁灭魔像兑换球
+	}
+
+	ProvMan: {
+		Tooltip: 用于在普罗维登斯的战利品之间转化
+		DisplayName: 普罗维登斯兑换球
+	}
+
+	PlagueMan: {
+		Tooltip: 用于在瘟疫使者歌莉娅的战利品之间转化
+		DisplayName: 瘟疫使者歌莉娅兑换球
+	}
+
+	PerfMan: {
+		Tooltip: 用于在血肉宿主的战利品之间转化
+		DisplayName: 血肉宿主兑换球
+	}
+
+	OreoMan: {
+		Tooltip: 用于在白金星舰的战利品之间转化
+		DisplayName: 白金星舰兑换球
+	}
+
+	NutMan: {
+		Tooltip: 用于在西格纳斯的战利品之间转化
+		DisplayName: 西格纳斯兑换球
+	}
+
+	HiveMan: {
+		Tooltip: 用于在腐巢意志的战利品之间转化
+		DisplayName: 腐巢意志兑换球
+	}
+
+	GhostMan: {
+		Tooltip: 用于在噬魂幽花的战利品之间转化
+		DisplayName: 噬魂幽花兑换球
+	}
+
+	FishMan: {
+		Tooltip: 用于在利维坦和阿娜希塔的战利品之间转化
+		DisplayName: 利维坦和阿娜希塔兑换球
+	}
+
+	DraeMan: {
+		Tooltip: 用于在星流巨械的战利品之间转化
+		DisplayName: 嘉登兑换球
+	}
+
+	DeusMan: {
+		Tooltip: 用于在星神游龙的战利品之间转化
+		DisplayName: 星神游龙兑换球
+	}
+
+	DesertMan: {
+		Tooltip: 用于在荒漠灾虫的战利品之间转化
+		DisplayName: 荒漠灾虫兑换球
+	}
+
+	CryoMan: {
+		Tooltip: 用于在极地之灵的战利品之间转化
+		DisplayName: 极地之灵兑换球
+	}
+
+	CrabMan: {
+		Tooltip: 用于在菌生蟹的战利品之间转化
+		DisplayName: 菌生蟹兑换球
+	}
+
+	ClamMan: {
+		Tooltip: 用于在灾厄之影的战利品之间转化
+		DisplayName: 灾厄之影兑换球
+	}
+
+	CeaselessMan: {
+		Tooltip: 用于在无尽虚空的战利品之间转化
+		DisplayName: 无尽虚空兑换球
+	}
+
+	BrimMan: {
+		Tooltip: 用于在硫磺火元素的战利品之间转化
+		DisplayName: 硫磺火元素兑换球
+	}
+
+	BoomerMan: {
+		Tooltip: 用于在硫海遗爵的战利品之间转化
+		DisplayName: 硫海遗爵兑换球
+	}
+
+	BirbMan: {
+		Tooltip: 用于在痴愚金龙的战利品之间转化
+		DisplayName: 痴愚金龙兑换球
+	}
+
+	AquaMan: {
+		Tooltip: 用于在渊海灾虫的战利品之间转化
+		DisplayName: 渊海灾虫兑换球
+	}
+}
