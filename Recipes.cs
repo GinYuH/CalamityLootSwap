@@ -195,7 +195,7 @@ namespace CalValEX
             ItemType<DazzlingStabberStaff>(),
             ItemType<PurgeGuzzler>(),
             ItemType<TelluricGlare>(),
-            ItemType<SolarFlare>(),
+            ItemType<BurningRevelation>(),
             ItemType<BlissfulBombardier>(),
         };
 
@@ -260,7 +260,7 @@ namespace CalValEX
             ItemType<ChickenCannon>(),
             ItemType<PhoenixFlameBarrage>(),
             ItemType<YharonsKindleStaff>(),
-            ItemType<FinalDawn>(),
+            ItemType<TheFinalDawn>(),
             ItemType<Wrathwing>(),
         };
 
@@ -276,6 +276,7 @@ namespace CalValEX
 						recipe.AddIngredient(items[j]);
 						recipe.AddIngredient(manipulator);
 						recipe.AddTile(tile);
+                        recipe.DisableDecraft();
 						recipe.Register();
 					}
 				}

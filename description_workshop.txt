@@ -8,8 +8,11 @@ Notes:
 [*] Profaned Guardians and Eidolon Wyrm don't have items as they do not have any alternate drops with the same drop rate.
 [/olist]
 
+Discord for support: https://discord.gg/rtq3jRDsrA
+
 Changelog:
 [olist]
+[*] 2.3.5 Mod icon update, removed shimmer exploits
 [*] 2.3.4 Chinese translation
 [*] 2.3.3 Fixed bugs with latest Calamtiy update, Mutated Truffle is now swappable but Old Duke Scales aren't
 [*] 2.3.2 Fixed Gastric Belcher Staff and Greentide not being registered for Leviathan's manipulator
