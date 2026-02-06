@@ -32,8 +32,8 @@ namespace CalamityLootSwap.Items
 				{
                 Recipe recipe = CreateRecipe();
 				recipe.AddIngredient(ModLoader.GetMod("CalamityMod").Find<ModItem>("ArmoredShell").Type, 1);
-				recipe.AddIngredient(ModLoader.GetMod("CalamityMod").Find<ModItem>("ExodiumCluster").Type, 5);
-                recipe.AddTile(TileID.LunarCraftingStation);
+				recipe.AddIngredient(ModLoader.GetMod("CalamityMod").Find<ModItem>("ArcFlashRing").Type, 1);
+                recipe.AddTile(TileID.MythrilAnvil);
                 recipe.Register();
 				}
 			}

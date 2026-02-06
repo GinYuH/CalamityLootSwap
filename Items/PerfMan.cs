@@ -31,7 +31,7 @@ namespace CalamityLootSwap.Items
             {
 				{
                 Recipe recipe = CreateRecipe();
-                recipe.AddIngredient(ModLoader.GetMod("CalamityMod").Find<ModItem>("BloodSample").Type, 30);
+                recipe.AddIngredient(ItemID.TissueSample, 30);
 				recipe.AddIngredient(ModLoader.GetMod("CalamityMod").Find<ModItem>("BloodyWormTooth").Type, 1);
                 recipe.AddTile(26);
                 recipe.Register();

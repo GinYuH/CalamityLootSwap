@@ -34,7 +34,7 @@ namespace CalamityLootSwap.Items
                 recipe.AddIngredient(ModLoader.GetMod("CalamityMod").Find<ModItem>("RuinousSoul").Type, 2);
 				recipe.AddIngredient(ModLoader.GetMod("CalamityMod").Find<ModItem>("Affliction").Type, 1);
 				recipe.AddIngredient(ModLoader.GetMod("CalamityMod").Find<ModItem>("Phantoplasm").Type, 20);
-                recipe.AddTile(TileID.LunarCraftingStation);
+                recipe.AddTile(TileID.MythrilAnvil);
                 recipe.Register();
 				}
 			}

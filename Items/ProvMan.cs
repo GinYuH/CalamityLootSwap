@@ -34,7 +34,7 @@ namespace CalamityLootSwap.Items
                 recipe.AddIngredient(ModLoader.GetMod("CalamityMod").Find<ModItem>("UnholyEssence").Type, 30);
 				recipe.AddIngredient(ModLoader.GetMod("CalamityMod").Find<ModItem>("DivineGeode").Type, 2);
 				recipe.AddIngredient(ModLoader.GetMod("CalamityMod").Find<ModItem>("BlazingCore").Type, 1);
-                recipe.AddTile(TileID.LunarCraftingStation);
+                recipe.AddTile(TileID.MythrilAnvil);
                 recipe.Register();
 				}
 			}

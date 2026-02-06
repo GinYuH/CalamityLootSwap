@@ -33,7 +33,7 @@ namespace CalamityLootSwap.Items
                 Recipe recipe = CreateRecipe();
 				recipe.AddIngredient(ModLoader.GetMod("CalamityMod").Find<ModItem>("EffulgentFeather").Type, 2);
 				recipe.AddIngredient(ModLoader.GetMod("CalamityMod").Find<ModItem>("DynamoStemCells").Type, 1);
-                recipe.AddTile(TileID.LunarCraftingStation);
+                recipe.AddTile(TileID.MythrilAnvil);
                 recipe.Register();
 				}	
 			}

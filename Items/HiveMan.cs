@@ -31,7 +31,7 @@ namespace CalamityLootSwap.Items
             {
 				{
                 Recipe recipe = CreateRecipe();
-                recipe.AddIngredient(ModLoader.GetMod("CalamityMod").Find<ModItem>("RottenMatter").Type, 30);
+                recipe.AddIngredient(ItemID.ShadowScale, 30);
 				recipe.AddIngredient(ModLoader.GetMod("CalamityMod").Find<ModItem>("RottenBrain").Type, 1);
                 recipe.AddTile(26);
                 recipe.Register();

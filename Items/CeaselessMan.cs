@@ -53,7 +53,7 @@ namespace CalamityLootSwap.Items
                 Recipe recipe = CreateRecipe();
 				recipe.AddIngredient(ModLoader.GetMod("CalamityMod").Find<ModItem>("DarkPlasma").Type, 1);
 				recipe.AddIngredient(ModLoader.GetMod("CalamityMod").Find<ModItem>("TheEvolution").Type, 1);
-				recipe.AddTile(TileID.LunarCraftingStation);
+				recipe.AddTile(TileID.MythrilAnvil);
                 recipe.Register();
 				}
 			}

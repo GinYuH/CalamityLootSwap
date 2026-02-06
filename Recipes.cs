@@ -129,7 +129,7 @@ namespace CalValEX
         List<int> levItems = new List<int>
         {
             ItemType<Atlantis>(),
-            ItemType<BrackishFlask>(),
+            ItemType<Whitewater>(),
             ItemType<Leviatitan>(),
             ItemType<LeviathanTeeth>(),
             ItemType<AnahitasArpeggio>(),
@@ -184,7 +184,6 @@ namespace CalValEX
             ItemType<FuelCellBundle>(),
             ItemType<BlightSpewer>(),
 			ItemType<PlagueStaff>(),
-			ItemType<DiseasedPike>(),
 			ItemType<TheSyringe>()
         };
 
@@ -228,7 +227,7 @@ namespace CalValEX
         List<int> weavieItems = new List<int>
         {
             ItemType<TheStorm>(),
-            ItemType<StormDragoon>()
+            ItemType<SkytideDragoon>()
         };
 
         List<int> scalItems = new List<int>
@@ -244,11 +243,11 @@ namespace CalValEX
 
         List<int> dogItems = new List<int>
         {
-            ItemType<StaffoftheMechworm>(),
-            ItemType<Eradicator>(),
-            ItemType<Excelsus>(),
-            ItemType<DeathhailStaff>(),
-            ItemType<Deathwind>(),
+            ItemType<VoidEaterMarionette>(),
+            ItemType<HyperdeathRiftScepter>(),
+            ItemType<DimensionTearingDisk>(),
+            ItemType<ThreadOfEradication>(),
+            ItemType<MawOfInfinity>(),
             ItemType<TheObliterator>()
         };
 
@@ -287,10 +286,10 @@ namespace CalValEX
         {
             ManipulatorRecipes(ItemType<AquaMan>(), TileID.Anvils, aquaItems);
             ManipulatorRecipes(ItemType<PerfMan>(), TileID.DemonAltar, perfItems);
-            ManipulatorRecipes(ItemType<BirbMan>(), TileID.LunarCraftingStation, birbItems);
-            ManipulatorRecipes(ItemType<BoomerMan>(), TileID.LunarCraftingStation, boomerItems);
+            ManipulatorRecipes(ItemType<BirbMan>(), TileID.MythrilAnvil, birbItems);
+            ManipulatorRecipes(ItemType<BoomerMan>(), TileID.MythrilAnvil, boomerItems);
             ManipulatorRecipes(ItemType<BrimMan>(), TileID.Anvils, brimItems);
-            ManipulatorRecipes(ItemType<CeaselessMan>(), TileID.LunarCraftingStation, voidItems);
+            ManipulatorRecipes(ItemType<CeaselessMan>(), TileID.MythrilAnvil, voidItems);
             ManipulatorRecipes(ItemType<ClamMan>(), TileID.MythrilAnvil, cloneItems);
             ManipulatorRecipes(ItemType<CrabMan>(), TileID.Anvils, crabItems);
             ManipulatorRecipes(ItemType<CryoMan>(), TileID.IceMachine, cryoItems);
@@ -298,16 +297,16 @@ namespace CalValEX
             ManipulatorRecipes(ItemType<DeusMan>(), TileID.LunarCraftingStation, deusItems);
             ManipulatorRecipes(ItemType<DraeMan>(), TileType<DraedonsForge>(), draedonItems);
             ManipulatorRecipes(ItemType<FishMan>(), TileID.MythrilAnvil, levItems);
-            ManipulatorRecipes(ItemType<GhostMan>(), TileID.LunarCraftingStation, polterItems);
+            ManipulatorRecipes(ItemType<GhostMan>(), TileID.MythrilAnvil, polterItems);
             ManipulatorRecipes(ItemType<HiveMan>(), TileID.DemonAltar, hiveItems);
-            ManipulatorRecipes(ItemType<NutMan>(), TileID.LunarCraftingStation, sigItems);
+            ManipulatorRecipes(ItemType<NutMan>(), TileID.MythrilAnvil, sigItems);
             ManipulatorRecipes(ItemType<OreoMan>(), TileID.MythrilAnvil, oreoItems);
             ManipulatorRecipes(ItemType<PlagueMan>(), TileID.MythrilAnvil, pbgItems);
-            ManipulatorRecipes(ItemType<ProvMan>(), TileID.LunarCraftingStation, proviItems);
+            ManipulatorRecipes(ItemType<ProvMan>(), TileID.MythrilAnvil, proviItems);
             ManipulatorRecipes(ItemType<RavagerMan>(), TileID.MythrilAnvil, ravagerItems);
             ManipulatorRecipes(ItemType<ShellMan>(), TileID.Anvils, clamItems);
-            ManipulatorRecipes(ItemType<SlimeMan>(), TileType<StaticRefiner>(), slimeItems);
-            ManipulatorRecipes(ItemType<WeebMan>(), TileID.LunarCraftingStation, weavieItems);
+            ManipulatorRecipes(ItemType<SlimeMan>(), TileID.Solidifier, slimeItems);
+            ManipulatorRecipes(ItemType<WeebMan>(), TileID.MythrilAnvil, weavieItems);
             ManipulatorRecipes(ItemType<WitchMan>(), TileType<CosmicAnvil>(), scalItems);
             ManipulatorRecipes(ItemType<WormMan>(), TileType<CosmicAnvil>(), dogItems);
             ManipulatorRecipes(ItemType<YharonMan>(), TileType<CosmicAnvil>(), yharonItems);

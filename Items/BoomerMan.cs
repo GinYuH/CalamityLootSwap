@@ -34,7 +34,7 @@ namespace CalamityLootSwap.Items
                 Recipe recipe = CreateRecipe();
                 recipe.AddIngredient(ModLoader.GetMod("CalamityMod").Find<ModItem>("CorrodedFossil").Type, 5);
 				recipe.AddIngredient(ModContent.ItemType<OldDukeScales>(), 1);
-                recipe.AddTile(TileID.LunarCraftingStation);
+                recipe.AddTile(TileID.MythrilAnvil);
                 recipe.Register();
 				}
 			}

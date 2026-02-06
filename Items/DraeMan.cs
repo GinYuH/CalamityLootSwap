@@ -23,7 +23,7 @@ namespace CalamityLootSwap.Items
 			Item.height = 24;
 			Item.maxStack = 999;
 			Item.value = 5000;
-            Item.rare = ModContent.RarityType<CalamityMod.Rarities.Violet>();
+            Item.rare = ModContent.RarityType<CalamityMod.Rarities.BurnishedAuric>();
 		}
 		public override void AddRecipes()
 		{

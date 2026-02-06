@@ -111,7 +111,7 @@ namespace CalamityLootSwap
                 mainRule.Add(leadingConditionRule);
                 leadingConditionRule.Add(ModContent.ItemType<DeusMan>());
             }
-            if (npc.type == ModContent.NPCType<Bumblefuck>())
+            if (npc.type == ModContent.NPCType<Dragonfolly>())
             {
                 npcLoot.AddNormalOnly(ModContent.ItemType<BirbMan>());
             }

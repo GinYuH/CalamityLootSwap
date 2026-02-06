@@ -4,7 +4,7 @@ Lets you switch between drops from Calamity bosses using new "Manipulator" items
 Notes: 
 [olist]
 [*] Manipulators have a 100% drop rate from most bosses
-[*] You can craft the Manipulators with the boss' ""expert"" drop
+[*] You can craft the Manipulators with the boss' expert drop
 [*] Profaned Guardians and Eidolon Wyrm don't have items as they do not have any alternate drops with the same drop rate.
 [/olist]
 
@@ -12,6 +12,7 @@ Discord for support: https://discord.gg/rtq3jRDsrA
 
 Changelog:
 [olist]
+[*] 2.4 Update for Brainstorm update.
 [*] 2.3.5 Mod icon update, removed shimmer exploits
 [*] 2.3.4 Chinese translation
 [*] 2.3.3 Fixed bugs with latest Calamtiy update, Mutated Truffle is now swappable but Old Duke Scales aren't
